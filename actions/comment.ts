@@ -7,7 +7,7 @@ import { Octokit } from 'octokit';
 const owner = process.env.NEXT_PUBLIC_OWNER;
 const repo = process.env.NEXT_PUBLIC_REPO;
 
-// eslint-disable-next-line import/prefer-default-export
+ 
 export async function createComment(issue_number: number, formData: FormData) {
   const accessToken = (await cookies()).get('access_token')?.value;
   if (!accessToken) {

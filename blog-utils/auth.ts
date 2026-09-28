@@ -20,7 +20,7 @@ export async function exchangeCodeForAccessToken(code: string) {
       throw new Error(response.statusText);
     }
 
-    // eslint-disable-next-line @typescript-eslint/naming-convention
+     
     const { access_token } = await response.json();
     cookieStore.set('access_token', access_token);
   } catch (error) {

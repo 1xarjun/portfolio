@@ -8,8 +8,9 @@ import usePosts from "@/blog-hooks/usePosts";
 import { Issues } from "@/blog-types";
 import MountProvider from "@/contexts/MountProvider";
 
-export default function Posts({ data }: { data: Issues }) {
-  const { posts, noMorePosts, loadMore } = usePosts(data);
+export default function Posts({ data }: { data: Issues }) { 
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { posts, noMorePosts:_, loadMore:__ } = usePosts(data);
 
   return (
     <div className="flex flex-col gap-12">

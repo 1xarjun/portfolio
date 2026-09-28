@@ -10,7 +10,8 @@ export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    setMounted(true);
+	  // eslint-disable-next-line react-hooks/set-state-in-effect
+	  setMounted(true);
   }, []);
 
   if (!mounted) return <Skeleton className="h-7 w-7 rounded-md" />;

@@ -22,7 +22,7 @@ export default function PostEditor({
   initTitle: string;
   initBody: string;
   actionName: string;
-  action: (formData: FormData) => Promise<any>;
+  action: (formData: FormData) => Promise<unknown>;
   pageHeading: string;
   pageDescription: boolean;
 }) {
