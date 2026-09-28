@@ -36,7 +36,7 @@ export default function PostEditor({
         {pageDescription && <p className="text-muted-foreground">Share thoughts, ideas, stories, or tutorials.</p>}
       </div>
 
-      <form className="prose prose-invert" action={action}>
+      <form className="prose prose-invert" action={action as (formData: FormData) => Promise<void>}>
         <FieldGroup>
           <Field>
             <FieldLabel className="text-foreground">Title</FieldLabel>

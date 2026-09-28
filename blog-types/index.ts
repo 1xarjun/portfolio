@@ -1,5 +1,5 @@
 import { GetResponseDataTypeFromEndpointMethod } from '@octokit/types';
-import octokit from '@/utils/octokit';
+import octokit from '@/blog-utils/octokit';
 
 export type Issues = GetResponseDataTypeFromEndpointMethod<
   typeof octokit.rest.issues.listForRepo
