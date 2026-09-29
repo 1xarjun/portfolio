@@ -28,7 +28,7 @@ export default function Header() {
 
   return (
     <header
-      className={`h-15 fixed inset-x-0 max-w-[calc(var(--container-3xl)+var(--spacing)*8)] mx-auto mt-5 rounded-2xl flex justify-between items-center backdrop-blur-md z-10 px-8 py-4 text-muted-foreground transition-colors text-sm ${scrolled ? "bg-background/80" : "bg-background/30"}`}
+      className={`h-15 fixed inset-x-0 sm:max-w-[calc(var(--container-3xl)+var(--spacing)*8)] sm:mx-auto mt-5 sm:rounded-2xl flex justify-between items-center backdrop-blur-md z-10 px-8 py-4 text-muted-foreground transition-colors text-sm ${scrolled ? "bg-background/80" : "bg-background/30"}`}
     >
       <Link
         data-selected={pathname === '/'}

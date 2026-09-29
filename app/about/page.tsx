@@ -11,14 +11,14 @@ export default function AboutPage() {
     <div>
       <div className="space-y-14 leading-relaxed text-foreground/90">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold text-foreground">About</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground">About</h1>
           <p className="text-muted-foreground">
             Hi, I&apos;m Arjun Banerjee, a self-taught full-stack web developer
             passionate about building meaningful, user-focused web applications.
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-semibold text-foreground">Who am I</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground">Who am I</h2>
           <div className="space-y-4">
             <p>
               I&apos;m a Fullstack Web Developer based in Bankura, India (Open
@@ -47,7 +47,7 @@ export default function AboutPage() {
         </div>
 
         <div className="flex flex-col gap-5">
-          <h2 className="text-2xl font-semibold text-foreground">
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground">
             About this site
           </h2>
           <div className="pl-4">

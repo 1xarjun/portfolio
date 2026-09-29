@@ -25,13 +25,13 @@ export default function ProjectsPage() {
     <div>
       <div className="space-y-14 text-foreground/80">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold text-foreground">Projects</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground">Projects</h1>
           <p className="text-muted-foreground">
             A curated list of my projects. Only the ones I&apos;m proud of.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((p, i) => (
             <Card
               key={i}

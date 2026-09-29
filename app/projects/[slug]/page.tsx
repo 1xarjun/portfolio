@@ -32,7 +32,7 @@ export default async function ProjectPage({
     <div>
       <div className="text-foreground/90">
         <div className="flex flex-col gap-3">
-          <h1 className="text-3xl font-bold text-foreground">
+          <h1 className="text-2xl sm:text-3xl font-bold text-foreground">
             {project?.name}
           </h1>
           <p className="text-muted-foreground">{project?.description}</p>
@@ -41,7 +41,7 @@ export default async function ProjectPage({
         <div className="mt-8 flex gap-4 items-center">
           <a
             href={project?.url}
-            className={cn(buttonVariants({ size: "lg" }), "rounded-full")}
+            className={cn(buttonVariants({ size: "lg" }), "rounded-full text-xs sm:text-sm")}
           >
             Live Demo
             <ArrowUpRight />
@@ -49,7 +49,7 @@ export default async function ProjectPage({
 
           <a
             href={project?.github_url}
-            className={cn(buttonVariants({ size: "lg" }), "rounded-full")}
+            className={cn(buttonVariants({ size: "lg" }), "rounded-full text-xs sm:text-sm")}
           >
             1xarjun/{project?.slug}
             <ArrowUpRight />

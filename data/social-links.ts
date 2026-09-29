@@ -4,12 +4,12 @@ const socialLinks = [
   {
     label: "GitHub",
     icon: FaGithub,
-    href: "#",
+    href: "https://github.com/1xarjun",
   },
   {
     label: "LinkedIn",
     icon: FaLinkedin,
-    href: "#",
+    href: "https://www.linkedin.com/in/li-1xarjun",
   },
   {
     label: "X",
@@ -19,7 +19,7 @@ const socialLinks = [
   {
     label: "Instagram",
     icon: FaInstagram,
-    href: "#",
+    href: "https://www.instagram.com/ig_1xarjun",
   },
 ];
 

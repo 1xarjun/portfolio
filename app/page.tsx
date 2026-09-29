@@ -26,14 +26,14 @@ export default function Page() {
 
   return (
     <>
-      <div className="grid grid-cols-4">
+      <div className="flex flex-col-reverse gap-8 sm:gap-0 sm:grid grid-cols-4">
 <div className="col-span-3 flex flex-col gap-4">
           <JobStatus />
-          <h1 className="text-4xl font-bold text-balance">
+          <h1 className="text-3xl sm:text-4xl font-bold text-balance text-center sm:text-left">
             Hi, I&apos;m Arjun
           </h1>
           <p className="text-base text-muted-foreground">
-            Wannabe Fullstack Developer from Bankura. Likes to tinker with Computers. Very active on the Socials.
+            Wannabe fullstack developer from bankura. Likes to tinker with computers. Very active on the socials.
           </p>
         </div>
         <div className="col-span-1 flex justify-center items-center">
@@ -45,11 +45,11 @@ export default function Page() {
       </div>
 
       <div className="flex flex-col justify-center mt-30">
-        <h2 className="text-2xl font-semibold text-center">
+        <h2 className="text-xl sm:text-2xl font-semibold text-center">
           Featured Projects
         </h2>
 
-        <div className="grid grid-cols-2 gap-4 mt-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-14">
           {featuredProjects.map((p, i) => (
             <Card
               key={i}
@@ -107,10 +107,10 @@ export default function Page() {
       </div>
 
       <div className="mt-20 flex flex-col">
-        <h2 className="text-2xl font-semibold text-center">About Me</h2>
+        <h2 className="text-xl sm:text-2xl font-semibold text-center">About Me</h2>
 
-        <div className="w-full max-w-3xl grid grid-cols-5 gap-4 mt-14">
-          <Card className="col-span-2 bg-background transition-all duration-300 group rounded-2xl">
+        <div className="w-full max-w-3xl grid grid-cols-1 sm:grid-cols-5 gap-4 mt-14">
+          <Card className="col-span-1 sm:col-span-2 bg-background transition-all duration-300 group rounded-2xl">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2.5 text-foreground text-base font-semibold">
                 <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-neutral-50 group-hover:bg-neutral-100 dark:bg-neutral-900 dark:group-hover:bg-neutral-800 text-foreground text-sm transition-colors">
@@ -127,7 +127,7 @@ export default function Page() {
             </CardContent>
           </Card>
 
-          <Card className="col-span-3 bg-background transition-all duration-300 group rounded-2xl">
+          <Card className="col-span-1 sm:col-span-3 bg-background transition-all duration-300 group rounded-2xl">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2.5 text-foreground text-base font-semibold">
                 <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-neutral-50 group-hover:bg-neutral-100 dark:bg-neutral-900 dark:group-hover:bg-neutral-800 text-foreground text-sm transition-colors">
@@ -169,7 +169,7 @@ export default function Page() {
             </CardContent>
           </Card>
 
-          <Card className="col-span-3 bg-background transition-all duration-300 group rounded-2xl">
+          <Card className="col-span-1 sm:col-span-3 bg-background transition-all duration-300 group rounded-2xl">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2.5 text-foreground text-base font-semibold">
                 <span className="inline-flex items-center justify-center w-7 h-7 rounded-lg bg-neutral-50 group-hover:bg-neutral-100 dark:bg-neutral-900 dark:group-hover:bg-neutral-800 text-foreground text-sm transition-colors">
@@ -201,7 +201,7 @@ export default function Page() {
             </CardContent>
           </Card>
 
-          <Card className="col-span-2 bg-background transition-all duration-300 group rounded-2xl">
+          <Card className="col-span-1 sm:col-span-2 bg-background transition-all duration-300 group rounded-2xl">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center gap-2.5 text-foreground text-base font-semibold">
                 <span
@@ -221,6 +221,8 @@ export default function Page() {
                     <a
                       key={label}
                       href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-neutral-100 dark:hover:bg-[#222] transition-colors duration-300 group/link overflow-hidden"
                     >
                       <span className="text-base">
@@ -253,9 +255,9 @@ export default function Page() {
       </div>
 
       <div className="mt-20">
-        <Card className="bg-transparent text-foreground flex flex-row-reverse rounded-2xl p-0">
-          <CardHeader className="flex-1 rounded-none p-8">
-            <CardTitle className="text-2xl">
+        <Card className="bg-transparent text-foreground grid grid-cols-1 sm:grid-cols-3 grid-rows-2 sm:grid-rows-1 rounded-2xl p-0">
+          <CardHeader className="order-1 col-span-1 sm:col-span-2 sm:flex-1 rounded-none pt-1 px-6 pb-6 sm:p-8">
+            <CardTitle className="text-xl sm:text-2xl">
               Have questions about my projects?
             </CardTitle>
             <CardDescription className="text-base inline-flex flex-col gap-4">
@@ -271,7 +273,7 @@ export default function Page() {
               </a>
             </CardDescription>
           </CardHeader>
-          <CardContent className="w-1/3 p-6">
+          <CardContent className="-order-1 col-span-1 pt-6 px-6 pb-1 sm:p-6">
             <div className="flex justify-center items-center h-full text-foreground text-5xl bg-muted dark:bg-input/10 border border-border rounded-2xl text-center">
               <FiHelpCircle />
             </div>

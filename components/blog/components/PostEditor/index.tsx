@@ -32,7 +32,7 @@ export default function PostEditor({
   return (
     <div className="space-y-14 text-foreground/80">
       <div className="flex flex-col gap-4">
-        <h1 className="text-3xl font-bold text-foreground">{pageHeading}</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-foreground">{pageHeading}</h1>
         {pageDescription && <p className="text-muted-foreground">Share thoughts, ideas, stories, or tutorials.</p>}
       </div>
 

@@ -27,7 +27,7 @@ export default async function Post({ params }: { params: { number: string } }) {
   return (
     <div className="text-foreground/80 space-y-8">
       <div className="flex flex-col gap-2.5">
-        <h1 className="text-3xl font-bold text-foreground">{post?.title}</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-foreground">{post?.title}</h1>
         <span className="text-sm text-muted-foreground">
           {new Date(post?.created_at).toLocaleString("en-US", {
             dateStyle: "medium",

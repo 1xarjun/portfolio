@@ -51,9 +51,9 @@ export default function RootLayout({
         />
       </head>
       <ThemeProvider>
-        <body className="max-w-[calc(var(--container-3xl)+var(--spacing)*8)] mx-auto min-h-screen bg-background text-foreground relative text-base font-sans overflow-x-hidden flex flex-col">
-          <div className="absolute top-0 inset-x-0 max-w-lg mx-auto h-10 bg-linear-to-r from-purple-500 via-pink-500 to-red-500 blur-3xl"></div>
-          <div className="absolute bottom-0 inset-x-0 max-w-lg mx-auto h-10 bg-linear-to-l from-purple-500 via-pink-500 to-red-500 blur-3xl"></div>
+        <body className="w-full sm:max-w-[calc(var(--container-3xl)+var(--spacing)*8)] sm:mx-auto min-h-screen bg-background text-foreground relative text-base font-sans overflow-x-hidden flex flex-col">
+          <div className="absolute top-0 inset-x-0 max-w-48 sm:max-w-lg mx-auto h-10 bg-linear-to-r from-purple-500 via-pink-500 to-red-500 blur-3xl"></div>
+          <div className="absolute bottom-0 inset-x-0 max-w-48 sm:max-w-lg mx-auto h-10 bg-linear-to-l from-purple-500 via-pink-500 to-red-500 blur-3xl"></div>
           <Header />
           <main className="flex-1 pt-15 my-30 px-8">{children}</main>
           <Footer />

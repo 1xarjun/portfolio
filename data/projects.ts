@@ -59,7 +59,7 @@ const projects = [
     description:
       "Showcase of my projects.",
     github_url: "https://github.com/1xarjun/portfolio",
-    url: "",
+    url: "https://1xworks.vercel.app/",
     thumbnail: portfolioThumbnail,
     short_note: "I wanted to finish this project within a week or so, so I did what most people do — I took inspiration from open-source projects. You can find out more details on the site's About page."
   },

@@ -20,7 +20,7 @@ export default function Posts({ data }: { data: Issues }) {
           key={post.id}
           href={`/blog/post/${post.number}`}
         >
-          <p className="text-2xl font-semibold text-foreground">{post.title}</p>
+          <p className="text-xl sm:text-2xl font-semibold text-foreground">{post.title}</p>
           <MountProvider>
             <span className="text-sm text-muted-foreground">
               {new Date(post.created_at).toLocaleString("en-US", {
