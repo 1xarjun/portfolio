@@ -26,7 +26,7 @@ export default function Page() {
 
   return (
     <>
-      <div className="flex flex-col-reverse gap-8 sm:gap-0 sm:grid grid-cols-4">
+      <div className="flex flex-col-reverse gap-8 sm:gap-6 sm:grid grid-cols-4">
 <div className="col-span-3 flex flex-col gap-4">
           <JobStatus />
           <h1 className="text-3xl sm:text-4xl font-bold text-balance text-center sm:text-left">

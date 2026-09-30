@@ -22,7 +22,7 @@ export default async function Home() {
       <div className="flex justify-between items-center border-b border-border pb-8">
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground">Blog</h1>
-          <p className="text-muted-foreground leading-relaxed">
+          <p className="text-muted-foreground">
             This is where I occasionally share my journey.
           </p>
         </div>

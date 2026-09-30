@@ -9,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function AboutPage() {
   return (
     <div>
-      <div className="space-y-14 leading-relaxed text-foreground/90">
+      <div className="space-y-14 text-foreground/90">
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl sm:text-4xl font-bold text-foreground">About</h1>
           <p className="text-muted-foreground">
