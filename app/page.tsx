@@ -20,6 +20,7 @@ import stacks from "@/data/stacks";
 import socialLinks from "@/data/social-links";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import JobStatus from "@/components/job-status";
+import Socials from "@/components/socials";
 
 export default function Page() {
   const featuredProjects = projects.filter((p) => p.featured);
@@ -214,29 +215,8 @@ export default function Page() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="flex flex-col gap-2">
-                {socialLinks.map(({ label, icon, href }) => {
-                  const Icon = icon;
-                  return (
-                    <a
-                      key={label}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-muted-foreground hover:text-foreground hover:bg-neutral-100 dark:hover:bg-[#222] transition-colors duration-300 group/link overflow-hidden"
-                    >
-                      <span className="text-base">
-                        <Icon />
-                      </span>
-                      <span className="font-medium">{label}</span>
-                      <span className="ml-auto group-hover/link:text-foreground/70 [&_svg]:size-4 transition-colors">
-                        <ArrowUpRight className="translate-y-10 group-hover/link:translate-y-0 transition-transform duration-300" />
-                      </span>
-                    </a>
-                  );
-                })}
-              </div>
-            </CardContent>
+	    	<Socials />
+           </CardContent>
           </Card>
         </div>
 
