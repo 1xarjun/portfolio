@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react"
 
 export default function Socials() {
 
-	const handleTwitterClick = (e) => {
+	const handleTwitterClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
 		e.preventDefault();
 		toast.error("Sorry, I don't have a X account!");
 	}

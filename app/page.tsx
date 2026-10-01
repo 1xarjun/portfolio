@@ -17,7 +17,6 @@ import { VscCode } from "react-icons/vsc";
 import { BsBriefcase, BsLink45Deg } from "react-icons/bs";
 import projects from "@/data/projects";
 import stacks from "@/data/stacks";
-import socialLinks from "@/data/social-links";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import JobStatus from "@/components/job-status";
 import Socials from "@/components/socials";

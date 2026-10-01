@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import ThemeProvider from "@/contexts/ThemeProvider";
 import Footer from "@/components/footer";
 import { Toaster } from "sonner";
+import type React from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,7 +63,7 @@ export default function RootLayout({
 	 	  "--normal-bg": "var(--background)",
 		  "--normal-text": "var(--foreground)",
 		  "--normal-border": "var(--border)"
-	  }} />
+	  } as React.CSSProperties} />
           <Footer />
         </body>
       </ThemeProvider>
