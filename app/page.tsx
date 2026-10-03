@@ -73,16 +73,18 @@ export default function Page() {
                 <CardTitle>{p.name}</CardTitle>
                 <CardDescription className="flex items-center [&_svg]:size-4">
                   <a
-                    target="_blank"
-                    className={buttonVariants({ variant: "link" })}
-                    href={p.github_url}
+		  target="_blank"
+		  rel="noopener no-referrer"
+		  className={buttonVariants({ variant: "link" })}
+		  href={p.github_url}
                   >
                     <SiGithub />
                   </a>
-                  <a
-                    target="_blank"
-                    className={buttonVariants({ variant: "link" })}
-                    href={p.url}
+		  <a
+		  target="_blank"
+		  rel="noopener no-referrer"
+		  className={buttonVariants({ variant: "link" })}
+		  href={p.url}
                   >
                     <ArrowUpRight />
                   </a>

@@ -2,7 +2,7 @@ import scvThumbnail from "@/public/screenshot/simple-code-viewer.png"
 import jotThumbnail from "@/public/screenshot/jot.png"
 import flogThumbnail from "@/public/screenshot/flog.png"
 import deptThumbnail from "@/public/screenshot/dept.png"
-import stodoThumbnail from "@/public/screenshot/stodo.png"
+import fydoThumbnail from "@/public/screenshot/stodo.png"
 import portfolioThumbnail from "@/public/screenshot/portfolio.png"
 
 const projects = [
@@ -45,12 +45,12 @@ const projects = [
     short_note: "Wanted to make a forum site from a long time but it was hard to get started, So i tried making the thing i was most interested in — a thread."
   },
   {
-    slug: "simple-to-do",
-    name: "Simple To Do",
+    slug: "fydo",
+    name: "Fydo",
     description: "A todo app fully inspired by the open source flowmo app.",
-    github_url: "https://github.com/1xarjun/simple-to-do",
-    url: "https://simple-to-do-sooty.vercel.app/",
-    thumbnail: stodoThumbnail,
+    github_url: "https://github.com/1xarjun/fydo",
+    url: "https://fydo.vercel.app/",
+    thumbnail: fydoThumbnail,
     short_note: "It started as a inspiration of the open source flowmo app. But later i lost the motivation to continue. now it is a unfinished project. I might come back to it in the future."
   },
   {
